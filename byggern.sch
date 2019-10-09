@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:byggern-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L MCU_Microchip_ATmega:ATmega162-16PU U1
-U 1 1 5D9DA1AA
-P 2100 3650
-F 0 "U1" H 2200 5700 50  0000 C CNN
-F 1 "ATmega162-16PU" H 2500 5600 50  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm" H 2100 3650 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2513-8-bit-AVR-Microntroller-ATmega162_Datasheet.pdf" H 2100 3650 50  0001 C CNN
-	1    2100 3650
-	1    0    0    -1  
-$EndComp
 $Comp
 L dk_Barrel-Power-Connectors:PJ-102A J?
 U 1 1 5D9DF8FD
@@ -402,4 +392,163 @@ Wire Wire Line
 Wire Wire Line
 	1500 900  1500 1950
 Connection ~ 1100 900 
+Text GLabel 2700 4650 2    50   Input ~ 0
+RDX_232
+Text GLabel 2700 4750 2    50   Output ~ 0
+TXD_232
+Wire Wire Line
+	2800 4150 2700 4150
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5D9DEC38
+P 3000 4250
+F 0 "J?" H 3080 4242 50  0000 L CNN
+F 1 "JTAG LINK" H 3080 4151 50  0000 L CNN
+F 2 "" H 3000 4250 50  0001 C CNN
+F 3 "~" H 3000 4250 50  0001 C CNN
+	1    3000 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATmega:ATmega162-16PU U1
+U 1 1 5D9DA1AA
+P 2100 3650
+F 0 "U1" H 2200 5700 50  0000 C CNN
+F 1 "ATmega162-16PU" H 2500 5600 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 2100 3650 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2513-8-bit-AVR-Microntroller-ATmega162_Datasheet.pdf" H 2100 3650 50  0001 C CNN
+	1    2100 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4250 2700 4250
+Wire Wire Line
+	2800 4350 2700 4350
+Wire Wire Line
+	2800 4450 2700 4450
+$Comp
+L byggern:MAX233 U?
+U 1 1 5D9E4780
+P 9550 3650
+F 0 "U?" H 10000 3450 50  0000 C CNN
+F 1 "MAX233" H 10100 3350 50  0000 C CNN
+F 2 "" H 9300 3450 50  0001 C CNN
+F 3 "" H 9300 3450 50  0001 C CNN
+	1    9550 3650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8850 4100
+NoConn ~ 8850 4200
+Wire Wire Line
+	8850 4300 8850 4400
+Wire Wire Line
+	8850 4500 8850 4600
+Wire Wire Line
+	8850 4700 8850 4800
+NoConn ~ 8850 4900
+Text GLabel 8850 5100 0    50   Input ~ 0
+TXD_232
+Text GLabel 8850 5500 0    50   Output ~ 0
+RXD_232
+NoConn ~ 8850 5300
+NoConn ~ 8850 5700
+NoConn ~ 10450 5300
+NoConn ~ 10450 5700
+$Comp
+L Connector:DB9_Female_MountingHoles J?
+U 1 1 5D9EEA2F
+P 11000 5400
+F 0 "J?" H 10700 6100 50  0000 L CNN
+F 1 "DB9_Female_MountingHoles" H 10700 6000 50  0000 L CNN
+F 2 "" H 11000 5400 50  0001 C CNN
+F 3 " ~" H 11000 5400 50  0001 C CNN
+	1    11000 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 5100 10600 5100
+Wire Wire Line
+	10600 5100 10600 5200
+Wire Wire Line
+	10600 5200 10700 5200
+Wire Wire Line
+	10450 5500 10700 5500
+$Comp
+L power:GND #PWR?
+U 1 1 5D9F4210
+P 10700 6000
+F 0 "#PWR?" H 10700 5750 50  0001 C CNN
+F 1 "GND" H 10705 5827 50  0000 C CNN
+F 2 "" H 10700 6000 50  0001 C CNN
+F 3 "" H 10700 6000 50  0001 C CNN
+	1    10700 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D9F4B68
+P 11000 6000
+F 0 "#PWR?" H 11000 5750 50  0001 C CNN
+F 1 "GND" H 11005 5827 50  0000 C CNN
+F 2 "" H 11000 6000 50  0001 C CNN
+F 3 "" H 11000 6000 50  0001 C CNN
+	1    11000 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 5800 10700 6000
+Wire Wire Line
+	9800 6200 9700 6200
+Wire Wire Line
+	9700 6200 9700 6300
+Connection ~ 9700 6200
+Wire Wire Line
+	9700 6200 9600 6200
+$Comp
+L power:GND #PWR?
+U 1 1 5DA02D2F
+P 9700 6300
+F 0 "#PWR?" H 9700 6050 50  0001 C CNN
+F 1 "GND" H 9705 6127 50  0000 C CNN
+F 2 "" H 9700 6300 50  0001 C CNN
+F 3 "" H 9700 6300 50  0001 C CNN
+	1    9700 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5DA03DBF
+P 9350 3800
+F 0 "C?" V 9121 3800 50  0000 C CNN
+F 1 "0.1uF" V 9212 3800 50  0000 C CNN
+F 2 "" H 9350 3800 50  0001 C CNN
+F 3 "~" H 9350 3800 50  0001 C CNN
+	1    9350 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5D9E6B36
+P 9650 3800
+F 0 "#PWR?" H 9650 3650 50  0001 C CNN
+F 1 "VCC" H 9667 3973 50  0000 C CNN
+F 2 "" H 9650 3800 50  0001 C CNN
+F 3 "" H 9650 3800 50  0001 C CNN
+	1    9650 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 3800 9650 3800
+Connection ~ 9650 3800
+$Comp
+L power:GND #PWR?
+U 1 1 5DA0B668
+P 9250 3800
+F 0 "#PWR?" H 9250 3550 50  0001 C CNN
+F 1 "GND" H 9255 3627 50  0000 C CNN
+F 2 "" H 9250 3800 50  0001 C CNN
+F 3 "" H 9250 3800 50  0001 C CNN
+	1    9250 3800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
