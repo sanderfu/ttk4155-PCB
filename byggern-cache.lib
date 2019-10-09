@@ -86,11 +86,11 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic_Conn_01x06
+# Connector_Generic_Conn_01x07
 #
-DEF Connector_Generic_Conn_01x06 J 0 40 Y N 1 F N
-F0 "J" 0 300 50 H V C CNN
-F1 "Connector_Generic_Conn_01x06" 0 -400 50 H V C CNN
+DEF Connector_Generic_Conn_01x07 J 0 40 Y N 1 F N
+F0 "J" 0 400 50 H V C CNN
+F1 "Connector_Generic_Conn_01x07" 0 -400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -103,13 +103,15 @@ S -50 -95 0 -105 1 1 6 N
 S -50 5 0 -5 1 1 6 N
 S -50 105 0 95 1 1 6 N
 S -50 205 0 195 1 1 6 N
-S -50 250 50 -350 1 1 10 f
-X Pin_1 1 -200 200 150 R 50 50 1 1 P
-X Pin_2 2 -200 100 150 R 50 50 1 1 P
-X Pin_3 3 -200 0 150 R 50 50 1 1 P
-X Pin_4 4 -200 -100 150 R 50 50 1 1 P
-X Pin_5 5 -200 -200 150 R 50 50 1 1 P
-X Pin_6 6 -200 -300 150 R 50 50 1 1 P
+S -50 305 0 295 1 1 6 N
+S -50 350 50 -350 1 1 10 f
+X Pin_1 1 -200 300 150 R 50 50 1 1 P
+X Pin_2 2 -200 200 150 R 50 50 1 1 P
+X Pin_3 3 -200 100 150 R 50 50 1 1 P
+X Pin_4 4 -200 0 150 R 50 50 1 1 P
+X Pin_5 5 -200 -100 150 R 50 50 1 1 P
+X Pin_6 6 -200 -200 150 R 50 50 1 1 P
+X Pin_7 7 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -406,6 +408,28 @@ X DB7 9 550 -850 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
+# byggern_Barrel_jack
+#
+DEF byggern_Barrel_jack U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "byggern_Barrel_jack" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+A -80 -250 25 901 -901 1 1 10 F -80 -225 -80 -275
+A -80 -250 25 901 -901 1 1 10 N -80 -225 -80 -275
+T 0 50 -515 15 0 1 1 Mounting Normal 0 C C
+S -150 -200 250 -500 1 1 10 f
+S 195 -225 -80 -275 1 1 10 F
+P 2 1 1 6 10 -530 90 -530 N
+P 2 1 1 10 250 -250 200 -250 N
+P 6 1 1 10 -100 -450 -50 -450 0 -400 50 -450 150 -450 250 -450 N
+X ~ 1 350 -250 100 L 50 50 1 1 w
+X ~ 2 350 -450 100 L 50 50 1 1 P
+X MountPin 3 50 -650 120 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # byggern_IDT7164
 #
 DEF byggern_IDT7164 U 0 40 Y Y 1 F N
@@ -591,36 +615,6 @@ X 5D 6 -250 -500 100 R 50 50 1 1 I
 X 6D 7 -250 -600 100 R 50 50 1 1 I
 X 7D 8 -250 -700 100 R 50 50 1 1 I
 X 8D 9 -250 -800 100 R 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# dk_Barrel-Power-Connectors_PJ-102A
-#
-DEF dk_Barrel-Power-Connectors_PJ-102A J 0 40 Y Y 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "dk_Barrel-Power-Connectors_PJ-102A" 0 -250 50 H V C CNN
-F2 "digikey-footprints:Barrel_Jack_5.5mmODx2.1mmID_PJ-102A" 200 200 60 H I L CNN
-F3 "https://www.cui.com/product/resource/digikeypdf/pj-102a.pdf" 200 300 60 H I L CNN
-F4 "CP-102A-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "PJ-102A" 200 500 60 H I L CNN "MPN"
-F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
-F7 "Barrel - Power Connectors" 200 700 60 H I L CNN "Family"
-F8 "https://www.cui.com/product/resource/digikeypdf/pj-102a.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/cui-inc/PJ-102A/CP-102A-ND/275425" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "CONN PWR JACK 2X5.5MM SOLDER" 200 1000 60 H I L CNN "Description"
-F11 "CUI Inc." 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-A -175 0 25 901 -901 0 1 0 N -175 25 -175 -25
-S -25 50 0 -50 0 1 0 N
-P 2 0 1 0 -25 -25 -175 -25 N
-P 2 0 1 0 -25 25 -175 25 N
-P 3 0 1 0 0 -100 -50 -100 -100 -100 N
-P 4 0 1 0 0 -200 -150 -200 -200 -150 -250 -200 N
-P 5 0 1 0 -100 -100 -125 -100 -100 -150 -75 -100 -100 -100 N
-X ~ 1 100 0 100 L 50 50 1 1 P
-X ~ 2 100 -200 100 L 50 50 1 1 P
-X ~ 3 100 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
