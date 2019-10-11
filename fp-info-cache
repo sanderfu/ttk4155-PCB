@@ -1,4 +1,4 @@
-18526590908685141
+18529732480390431
 Aesthetics
 BREADBOARD_SPACING
 BREADBOARD SPACING
@@ -46234,6 +46234,13 @@ THT ceramic resonator filter DSS6
 0
 3
 3
+DIP794W46P254L2967H457Q28B
+DIP794W46P254L2967H457Q28B
+
+
+0
+28
+28
 Diode_SMD
 D_0201_0603Metric
 Diode SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
@@ -79519,6 +79526,13 @@ ADC0844CCN
 0
 20
 20
+byggern
+CY7C185-20PC
+
+
+0
+28
+28
 byggern
 GAL16V8
 
