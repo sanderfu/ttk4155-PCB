@@ -20,4 +20,5 @@
   (lib (name Silicon-Custom)(type KiCad)(uri C:/repo/SparkFun-KiCad-Libraries/Footprints/Silicon-Custom.pretty)(options "")(descr ""))
   (lib (name Silicon-Standard)(type KiCad)(uri C:/repo/SparkFun-KiCad-Libraries/Footprints/Silicon-Standard.pretty)(options "")(descr ""))
   (lib (name Switches)(type KiCad)(uri C:/repo/SparkFun-KiCad-Libraries/Footprints/Switches.pretty)(options "")(descr ""))
+  (lib (name byggern)(type KiCad)(uri ${KIPRJMOD}/byggern.pretty)(options "")(descr "ICs specific to the TTK4155 project"))
 )

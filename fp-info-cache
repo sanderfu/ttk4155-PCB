@@ -1,4 +1,4 @@
-18517166033224531
+18526590908685141
 Aesthetics
 BREADBOARD_SPACING
 BREADBOARD SPACING
@@ -79513,12 +79513,54 @@ varistor SIOV
 2
 2
 byggern
-team_byggern_2
+ADC0844CCN
 
 
 0
+20
+20
+byggern
+GAL16V8
+
+
 0
+20
+20
+byggern
+LM340SX
+
+
 0
+4
+4
+byggern
+MAX233CPP
+
+
+0
+20
+20
+byggern
+MCP2515-EP
+
+
+0
+18
+18
+byggern
+MCP2551-IP
+
+
+0
+8
+8
+byggern
+SN74ALS573CN
+
+
+0
+20
+20
 digikey-footprints
 3-SIP_Module_TM1000Q
 
