@@ -1,4 +1,4 @@
-update=11.10.2019 14.23.39
+update=15.10.2019 16.16.03
 version=1
 last_client=kicad
 [general]
@@ -193,8 +193,8 @@ Name=In30.Cu
 Type=0
 Enabled=0
 [pcbnew/Layer.B.Cu]
-Name=GND
-Type=1
+Name=B.Cu
+Type=2
 Enabled=1
 [pcbnew/Layer.B.Adhes]
 Enabled=0
@@ -205,11 +205,11 @@ Enabled=0
 [pcbnew/Layer.F.Paste]
 Enabled=1
 [pcbnew/Layer.B.SilkS]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.F.SilkS]
 Enabled=1
 [pcbnew/Layer.B.Mask]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.F.Mask]
 Enabled=1
 [pcbnew/Layer.Dwgs.User]
